@@ -1,13 +1,11 @@
 body {
-    font-size: 15px;
     color: hsl(0, 0%, 98%); 
-    
     font-family: 'Poppins', sans-serif;
 }
 
 .posicao {
-    padding-left: 30rem;
-    padding-top: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
     line-height: 200%;
 }
 
@@ -20,88 +18,70 @@ body {
     color: black;
 }
 
+.texto {
+    color: black;
+    margin-left: 
+}
+
 .cartoes {
-    display: grid;
-    /* grid-gap: 15px 15px; */
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 100vh;
-    margin: 100px;
-    justify-content: center;
-    align-content: center;
+    display: flex;
+     align-content: center;  
 }
 
 .cartao {
-    display: flex;
-    /* justify-content: center;
-    align-content: center; */
+    width: 300px;
     border-top-width: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
-    min-height: 250px;
     border-radius: 5px;
-    flex-wrap: wrap;
+    height: 200px;
+    margin: auto;
     border-style:solid;
     background-color: white;
 }
 
-
-/* Cartão 1: teambuilder */
-.cartao1 {
-    /* position: relative; */
-    /* position: absolute; */
-    /* z-index: 5; */
-    display: block;
-    border-top-color: hsl(0, 78%, 62%);
-    /* flex-wrap: wrap; */
-    /* grid-column: 1 / 3;
-    grid-row: 1 / 2;  */
-    /* overflow: hidden; */
+.cartao > h1 {
+    font-size: 1.1rem;
 }
 
-/* .cartao1 > p {
-    margin-top: -85px;
-    position: relative;
-} */
+.cartao > p {
+    color: grey;
+}
+
+.cartao1 {
+    border-top-color: hsl(0, 78%, 62%);
+    order: 1;
+}
 
 .imagem1Casa {
     display: flex;
     justify-content: flex-end;
-    /* position: absolute; */
-    /* right: 10px; */
 }
-
-/* .imagem1Casa > img {
-    right: 10px;
-} */
 
 
 /* Cartão 2: karma */
 .cartao2 {
-    display: block;
+    margin-top: 2.5rem;
     border-top-color: hsl(34, 97%, 64%);
 }
 
-/* .cartao2 > p {
-    margin-top: -85px; 
-} */
 
 .imagem2Lampada {
     display: flex;
-    bottom: 0;
     justify-content: flex-end;
 }
 
 /* Cartão 3 */
 .cartao3 {
-    display: block;
     border-top-color: hsl(180, 62%, 55%);
 }
 
-/* .cartao3 > p {
-     margin-top: -85px; 
-} */
+
+.imagens {
+    position: relative;
+    bottom: 0;
+    right: 10px;
+}
 
 .imagem3Lupa {
     display: flex;
@@ -110,16 +90,22 @@ body {
 
 /* Cartão 4 */
 .cartao4 {
-    display: block;
     border-top-color: hsl(212, 86%, 64%);
 }
 
 .imagem3Calculadora {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 10px;
 }
 
 
+@media only screen and (max-width: 1024px) {
+    .cartoes {
+        display: block;
+        }
 
-
+    .cartao3, 
+    .cartao4 {
+        margin-top: 2.5rem;
+    }
+}
