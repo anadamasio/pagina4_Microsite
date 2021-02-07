@@ -1,7 +1,23 @@
 body {
     font-size: 15px;
-    color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%); 
+    
     font-family: 'Poppins', sans-serif;
+}
+
+.posicao {
+    padding-left: 30rem;
+    padding-top: 2.5rem;
+    line-height: 200%;
+}
+
+.titulo1 {
+    color: black;
+}
+
+.titulo2 {
+    font-weight: bold;
+    color: black;
 }
 
 .cartoes {
